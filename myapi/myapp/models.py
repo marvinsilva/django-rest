@@ -88,3 +88,14 @@ class User(AbstractBaseUser, PermissionsMixin):
     def email_user(self, subject, message, from_email=None, **kwargs):
         """Send an email to this user."""
         send_mail(subject, message, from_email, [self.email], **kwargs)
+
+
+class Music(models.Model):
+    class Meta:
+        db_table = 'music'
+
+    title = models.CharField(max_length=200)
+    seconds = models.IntegerField()
+
+    def __str__(self):
+        return self.title
