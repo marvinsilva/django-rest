@@ -18,16 +18,13 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
 
-from myapi.myapp.views import home, MusicListViewSet
+from myapi.myapp.views import home
 
-router = routers.DefaultRouter()
-router.register('musics', MusicListViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home),
-    path('', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('', include('myapi.myapp.urls')),
 ]
 
 if settings.DEBUG:
