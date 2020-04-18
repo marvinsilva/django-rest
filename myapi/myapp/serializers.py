@@ -3,9 +3,11 @@ from myapi.myapp.models import Music, Band, Album, Member
 
 
 class MusicSerializer(serializers.ModelSerializer):
+    album = serializers.ReadOnlyField(source='album.title')
+
     class Meta:
         model = Music
-        fields = '__all__'
+        fields = ('id', 'title', 'seconds', 'album')
 
 
 class BandSerializer(serializers.ModelSerializer):
@@ -15,12 +17,16 @@ class BandSerializer(serializers.ModelSerializer):
 
 
 class AlbumSerializer(serializers.ModelSerializer):
+    band = serializers.ReadOnlyField(source='band.name')
+
     class Meta:
         model = Album
-        fields = '__all__'
+        fields = ('id', 'title', 'band', 'date')
 
 
 class MemberSerializer(serializers.ModelSerializer):
+    band = serializers.ReadOnlyField(source='band.name')
+
     class Meta:
         model = Member
-        fields = '__all__'
+        fields = ('id', 'name', 'age', 'band')
