@@ -17,12 +17,16 @@ from django.utils.translation import gettext, gettext_lazy as _
 from django.views.decorators.csrf import csrf_protect
 from django.views.decorators.debug import sensitive_post_parameters
 
-from myapi.myapp.models import User, Music
+from myapi.myapp.models import User, Music, Album, Band, Member
 
 csrf_protect_m = method_decorator(csrf_protect)
 sensitive_post_parameters_m = method_decorator(sensitive_post_parameters())
 
+# Models register
 admin.site.register(Music)
+admin.site.register(Album)
+admin.site.register(Band)
+admin.site.register(Member)
 
 
 @admin.register(User)
