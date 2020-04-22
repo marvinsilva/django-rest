@@ -1,4 +1,5 @@
-# Criando Uma API Rest Utilizando Django Rest Framework
+# Django Rest Framework
+Criando Uma API Rest Utilizando Django Rest Framework
 ___
 
 [![Build Status](https://travis-ci.org/marvinsilva/django-rest.svg?branch=master)](https://travis-ci.org/marvinsilva/django-rest)
