@@ -1,5 +1,5 @@
-# django-rest
-Criando Uma API Rest Utilizando Django Rest Framework
+# Criando Uma API Rest Utilizando Django Rest Framework
+___
 
 [![Build Status](https://travis-ci.org/marvinsilva/django-rest.svg?branch=master)](https://travis-ci.org/marvinsilva/django-rest)
 [![codecov](https://codecov.io/gh/marvinsilva/django-rest/branch/master/graph/badge.svg)](https://codecov.io/gh/marvinsilva/django-rest)
@@ -40,3 +40,7 @@ Django app:
   - pipenv run python manage.py createsuperuser
   - pipenv run python manage.py runserver
 ```
+
+Referências:
+- https://www.django-rest-framework.org/
+- https://medium.com/@marcosrabaioli/criando-uma-api-rest-utilizando-django-rest-framework-parte-1-55ac3e394fa
