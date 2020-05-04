@@ -23,23 +23,23 @@ install:
 ```
 No repositório do projeto:
 ```console
-  - pipenv sync -d
-  - cp contrib/env-sample .env
+pipenv sync -d
+cp contrib/env-sample .env
 ```
 
 Para conferir a qualidade de código:
 ```console
-  - pipenv run flake8
-  - pipenv run pytest --cov=myapi
+pipenv run flake8
+pipenv run pytest --cov=myapi
 ```
 
 Django app:
 ```console
-  - pipenv run python manage.py makemigrations
-  - pipenv run python manage.py migrate
-  - pipenv run python manage.py collectstatic
-  - pipenv run python manage.py createsuperuser
-  - pipenv run python manage.py runserver
+pipenv run python manage.py makemigrations
+pipenv run python manage.py migrate
+pipenv run python manage.py collectstatic
+pipenv run python manage.py createsuperuser
+pipenv run python manage.py runserver
 ```
 
 Referências:
