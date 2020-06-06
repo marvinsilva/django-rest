@@ -45,5 +45,3 @@ pipenv run python manage.py runserver
 Referências:
 - https://www.django-rest-framework.org/
 - https://medium.com/@marcosrabaioli/criando-uma-api-rest-utilizando-django-rest-framework-parte-1-55ac3e394fa
-
- [ ~ Dependencies scanned by PyUp.io ~ ]
